@@ -1,0 +1,97 @@
+<!DOCTYPE>
+<html>
+<body>
+<head>
+<style>
+body {
+  background-image: url('aln.jpg');
+}
+</style>
+
+
+</head>
+<body>
+
+
+
+<h2>JavaScript1 Validation</h2>
+
+<form onsubmit="return false">
+  	<center><br><br>
+         <h1>Registration Form</h1><br>
+         <table border="8">	
+            
+             <tr><td><b>Name : </b></td>
+             <td><input type="text" name="uname" id="uname"   required="" /></td>
+            </tr>
+           
+            <tr><td><b>Email : </b></td>
+            <td><input type="text" id="Email"   required="" /></td>
+            </tr>
+            <tr><td><b>Phone no. : </b></td>
+            <td><input type="number" id="Phone"   required="" /></td>
+            </tr>
+            
+            <tr><td><b>Age : </b></td>
+            <td><input type="number" id="Std"   required="" /></td>
+            </tr>
+            <tr><td><b>Gender : </b></td>
+             <td><input type="radio"  id="Gender" value="male" >male
+            <input type="radio"  id="Gender2" value="female"  >female<br/></td>
+             </tr>
+           
+         </table>
+         <br><br>
+         
+         
+         <input type="button" onclick="myFunction()" value="Submit form">
+         
+         
+    </center>
+  </form>
+  <center>
+  <a href='cosmetics.html'>
+        <button>
+            Click Here For Next Page
+        </button>
+    </a>
+   
+    </center>
+  <p id="demo"> </p>
+         <p id="demo1"> </p>
+         <p id="demo2"></p>
+         <p id="demo3"> </p>
+         <p id="demo4"> </p>
+         <p id="demo5"> </p>
+         
+         
+         
+ <script>
+ 
+function myFunction() {
+  var x = document.getElementById("uname").value;
+  document.getElementById("demo").innerHTML = "Name : "+x;
+  var y = document.getElementById("Email").value;
+  document.getElementById("demo1").innerHTML = "E-mail :"+y;
+  var z = document.getElementById("Phone").value;
+  document.getElementById("demo2").innerHTML = "Phone: "+ z;
+  var a = document.getElementById("Std").value;
+  document.getElementById("demo3").innerHTML = "Std : "+a;
+  var b = document.getElementById("Gender").value;
+  document.getElementById("demo4").innerHTML = "Gender : "+b;
+  var c = document.getElementById("Gender2").value;
+  document.getElementById("demo5").innerHTML = "Gender   :"+c;
+  alert("Registration Successful...Enjoy Your Day");
+  
+}
+</script>
+
+
+  </body>
+</html> 
+
+
+
+
+
+
